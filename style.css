@@ -115,16 +115,19 @@ header .orange-button{
     color: #7fd1de;
 }
 
+
+
 .first-section{
     background: #fef3ed;
+    padding: 100px ;
 }
 
 .text-box{
     width: 30vw;
-    padding: 100px 0;
+
 }
 
-.text-box h1{
+h1{
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -133,7 +136,7 @@ header .orange-button{
 
 .text-box p{
     color: #616c78;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -143,11 +146,94 @@ header .orange-button{
 }
 
 .little-text{
-    font-size: 12px;
+    font-size: 14px;
     width: 50%;
     color: #33475a;
 }
 
 .little-text span{
     text-transform: uppercase;
+}
+
+
+
+.second-section{
+    background: #f4f8fb;
+    padding: 100px;
+}
+
+.first-box, .box{
+    float: left;
+    margin: 10px;
+    width: calc(33% - 18px);
+    height: 400px;
+}
+
+.left-box{
+    margin-left: 2px;
+
+}
+
+.right-box{
+    margin-right: 2px;
+}
+
+.row::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.first-box p{
+    color: #616c78;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300px;
+    line-height:1.3;
+}
+
+.box{
+    background-color: white;
+    box-shadow: 0 0 11px #eaf0f6;
+    padding: 30px;
+}
+
+.top-box{
+    padding: 20px 0;
+    border-bottom: 2px solid lightgrey;
+}
+
+.box .top-box h3 {
+    color: #32475a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.box .top-box p{
+    color: #616c78;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 300px;
+    line-height:1.5;
+}
+
+.box .bottom-box{
+    padding:20px 0;
+}
+
+.box .bottom-box h4{
+    text-transform: uppercase;
+    color: #32475a;
+    margin-bottom: 20px;
+}
+
+.box .bottom-box li{
+    position: relative;
+    left:5%;
+    list-style-type: none;
+    color: #616c78;
+}
+
+.box .bottom-box li img{
+    width: 20px;
 }
