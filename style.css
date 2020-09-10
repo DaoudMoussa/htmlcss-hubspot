@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -79,4 +80,28 @@
 .logo img{
     padding: 20px 0;
     width: 130px;
+}
+
+
+/* ==============FINE HEADER============= */
+
+
+.YT-ad{
+    background: #425c77;
+    color: white;
+}
+
+.YT-ad p{
+    padding: 20px;
+    line-height: 1.3;
+    font-weight: 300;
+}
+
+.YT-ad p a{
+    color: white;
+    font-weight: 400;
+}
+
+.YT-ad p a:hover{
+    color: #7fd1de;
 }
