@@ -70,11 +70,20 @@
     background-color: rgba(255, 122, 89, 0.2);
 }
 
-.try{
+.orange-button{
+    display: inline-block;
     color: white;
     background:RGB(255, 122, 89);
     border-radius:5px;
+    text-decoration: none;
+}
+
+header .orange-button{
     padding: 10px 20px;
+}
+
+.orange-button:hover{
+    background: #ffbcac;
 }
 
 .logo img{
@@ -104,4 +113,41 @@
 
 .YT-ad p a:hover{
     color: #7fd1de;
+}
+
+.first-section{
+    background: #fef3ed;
+}
+
+.text-box{
+    width: 30vw;
+    padding: 100px 0;
+}
+
+.text-box h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #32475a;
+}
+
+.text-box p{
+    color: #616c78;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.first-section .orange-button{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.little-text{
+    font-size: 12px;
+    width: 50%;
+    color: #33475a;
+}
+
+.little-text span{
+    text-transform: uppercase;
 }
