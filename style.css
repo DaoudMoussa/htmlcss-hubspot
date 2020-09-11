@@ -10,9 +10,19 @@
     margin:auto;
 }
 
+header{
+    padding-top:100px;
+}
+
 .header-top{
     background: #f5f8fa;
     border-bottom: 2px solid #dee5ed;
+    padding:10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100px;
 }
 
 
@@ -32,10 +42,10 @@
 
 .header-top .left-side a, .header-bottom .right-side a{
     display: inline-block;
-    margin:10px 0;
+    /* margin:10px 0; */
     text-decoration: none;
     color: #344758;
-    padding: 20px;
+    padding: 30px;
 }
 
 .fa-caret-down{
@@ -118,13 +128,16 @@ header .orange-button{
 
 
 .first-section{
-    background: #fef3ed;
-    padding: 100px ;
+    background-color: #fef3ed;
+    background-image: url("https://www.hubspot.com/hubfs/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg");
+    padding-bottom:400px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .text-box{
     width: 30vw;
-
+    padding-top: 100px ;
 }
 
 h1{
@@ -166,12 +179,11 @@ h1{
     float: left;
     margin: 10px;
     width: calc(33% - 18px);
-    height: 400px;
+    height: 550px;
 }
 
 .left-box{
     margin-left: 2px;
-
 }
 
 .right-box{
@@ -196,6 +208,17 @@ h1{
     background-color: white;
     box-shadow: 0 0 11px #eaf0f6;
     padding: 30px;
+}
+
+.box:not(.first-box):hover{
+    width: calc(33% - 8px);
+    margin: 5px ;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25)
+}
+
+.left-box:not(.first-box):hover{
+    margin: 5px 5px 5px -3px;
+
 }
 
 .top-box{
@@ -228,12 +251,18 @@ h1{
 }
 
 .box .bottom-box li{
-    position: relative;
-    left:5%;
+    margin-left: 10px;
     list-style-type: none;
     color: #616c78;
 }
 
 .box .bottom-box li img{
     width: 20px;
+}
+
+.box .bottom-box .orange-button{
+    display: block;
+    padding:20px;
+    margin-top: 60px;
+    text-align: center;
 }
