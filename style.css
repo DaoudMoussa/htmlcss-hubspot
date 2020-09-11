@@ -23,6 +23,7 @@ header{
     left: 0;
     width: 100%;
     height:100px;
+    z-index: 10;
 }
 
 
@@ -346,3 +347,95 @@ h1{
 .grid-cell p{
     font-size: 18px;
 }
+
+
+
+.fourth-section{
+    padding: 150px;
+    background: #fff;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.top-section{
+    color: #32475a;
+    margin-bottom: 200px;
+}
+
+.top-section::after, .bottom-section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.top-section .left{
+    width: 30%;
+}
+
+.top-section h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.top-section .left p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.image-box{
+    padding:10px;
+    display: inline-block;
+}
+
+.top-section .right img{
+    width: 110px;
+}
+
+.bottom-section .left{
+    width: 40%;
+    color: #32475a;
+    padding-top: 70px;
+}
+
+.bottom-section .left *{
+    margin-bottom: 20px;
+}
+
+.bottom-section .left h4{
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.bottom-section .left p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.fourth-section .orange-button{
+    padding: 20px;
+}
+
+.bottom-section .left > :last-child{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bottom-section .right{
+    width:40%;
+}
+
+.bottom-section .right img{
+    width: 100%;
+}
+
+
+
+/* ====================FINE MAIN================== */
