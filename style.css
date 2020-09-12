@@ -439,3 +439,131 @@ h1{
 
 
 /* ====================FINE MAIN================== */
+
+
+footer {
+    background-color: #32475a;
+    color: white;
+}
+
+footer .altro{
+    padding: 100px 0 30px;
+    border-bottom: 1px solid white;
+}
+
+.column{
+    display: inline-block;
+    float: left;
+    margin-right:20px;
+    width: calc(25% - 15px)  /* 15 px e'il margine totale (60px) diviso 4 */
+}
+
+.altro::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column:last-of-type{
+    margin-right:0;
+}
+
+.altro .column h4{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.altro .column li{
+    list-style-type: none;
+}
+
+.altro .column a{
+    font-size: 14px;
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-weight:lighter;
+}
+
+.altro .column a:hover{
+    color: #7fd1de;
+}
+
+.right-box{
+    margin-top: 20px;
+    float: right;
+}
+
+.right-box .support-button{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #32475a;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.right-box a{
+    color: White;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer .languages{
+    text-align: center;
+    margin-top: 400px ;
+}
+
+.languages li{
+    display: inline-block;
+
+}
+
+.languages li a{
+    color: White;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.languages li a:hover{
+    color: #7fd1de;
+}
+
+
+
+
+.credits{
+    padding: 30px 0 80px;
+}
+
+.credits .left{
+    float: left;
+}
+
+.credits .right{
+    float:right;
+}
+
+.credits .left p{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.credits .right a{
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.credits .right a:hover{
+    color: #7fd1de;
+}
+
+/* ============FINE FOOTER=============== */
