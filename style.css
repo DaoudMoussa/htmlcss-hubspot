@@ -180,17 +180,34 @@ h1{
 .first-box, .box{
     float: left;
     margin: 10px;
-    width: calc(33% - 18px);
+    width: calc(33% - 20px);
     height: 550px;
     position: relative;
 }
 
-.left-box{
+/* .left-box{
     margin-left: 2px;
 }
 
 .right-box{
     margin-right: 2px;
+} */
+
+.box{
+    background-color: white;
+    box-shadow: 0 0 1 1px #eaf0f6;
+    padding: 30px;
+}
+
+.box:not(.first-box):hover{
+    width: calc(33% - 10px);
+    margin: 5px ;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.05)
+}
+
+.left-box:not(.first-box):hover{
+    margin: 5px 5px 5px 5px;
+
 }
 
 .row::after{
@@ -205,23 +222,6 @@ h1{
     margin-bottom: 20px;
     font-weight: 300px;
     line-height:1.3;
-}
-
-.box{
-    background-color: white;
-    box-shadow: 0 0 11px #eaf0f6;
-    padding: 30px;
-}
-
-.box:not(.first-box):hover{
-    width: calc(33% - 8px);
-    margin: 5px ;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25)
-}
-
-.left-box:not(.first-box):hover{
-    margin: 5px 5px 5px -3px;
-
 }
 
 .top-box{
@@ -490,7 +490,7 @@ footer .altro{
     color: #7fd1de;
 }
 
-.right-box{
+.altro .right-box{
     margin-top: 20px;
     float: right;
 }
