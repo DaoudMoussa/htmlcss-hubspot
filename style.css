@@ -56,6 +56,55 @@ header{
 .header-top .left-side .language{
     border-right: 1px solid #dee5ed;
     padding-left: 0;
+    position: relative;
+}
+
+.language-box{
+    display: inline-block;
+}
+
+.dropdown-box{
+    position: absolute;
+    top: 90%;
+    display: none;
+    background-color: white;
+    border: 1px solid #dee5ed;
+
+}
+
+.language-box:hover .dropdown-box{
+    display: block;
+}
+
+.square{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:0;
+    left: 55%;
+    background-color: White;
+    transform: rotate(45deg) translateY(-50%);
+    z-index: 11;
+    border: 1px solid #dee5ed;
+}
+
+.dropdown-box li{
+    list-style-type: none;
+}
+
+.language-box .dropdown-box a{
+    display: block;
+    padding:10px 20px;
+    position: relative;
+    text-decoration: none;
+    color: #344758;
+    font-size: 18px;
+    background-color: white;
+    z-index: 12;
+}
+
+.language-box .dropdown-box a:hover{
+    background-color: #e6f5f8;
 }
 
 .header-top .right-side input{
@@ -115,6 +164,7 @@ header .orange-button{
     padding: 20px;
     line-height: 1.3;
     font-weight: 300;
+    font-size: 18px;
 }
 
 .YT-ad p a{
@@ -136,7 +186,7 @@ header .orange-button{
     background-repeat: no-repeat;
 }
 
-.text-box{
+.first-section .text-box{
     width: 30vw;
     padding-top: 100px ;
 }
@@ -148,7 +198,7 @@ h1{
     color: #32475a;
 }
 
-.text-box p{
+.first-section .text-box p{
     color: #616c78;
     font-size: 18px;
     margin-bottom: 20px;
@@ -184,14 +234,6 @@ h1{
     height: 550px;
     position: relative;
 }
-
-/* .left-box{
-    margin-left: 2px;
-}
-
-.right-box{
-    margin-right: 2px;
-} */
 
 .box{
     background-color: white;
@@ -336,12 +378,16 @@ h1{
 
 .grid-cell h4{
     font-size: 40px;
+    position: relative;
 }
 
 .grid-cell span{
     font-size: 20px;
     font-weight: normal;
     line-height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .grid-cell p{
@@ -528,6 +574,7 @@ footer .languages{
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .languages li a:hover{
@@ -564,6 +611,63 @@ footer .languages{
 
 .credits .right a:hover{
     color: #7fd1de;
+}
+
+.hub-bot{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 200px;
+    z-index: 10;
+}
+
+.hub-bot .text-box{
+    padding: 25px 20px;
+    border-radius:5px;
+    background-color: White;
+    color: #32475a;
+    position: relative;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.hub-bot img{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-times{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: lightgrey;
+}
+
+.hub-bot .icon a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #425b77;
+    color: white;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.hub-bot .icon a:hover{
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.fa-comment{
+    font-size: 30px;
 }
 
 /* ============FINE FOOTER=============== */
